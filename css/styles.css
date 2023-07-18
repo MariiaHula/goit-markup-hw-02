@@ -11,10 +11,24 @@
   --hero-background: rgba(46, 47, 66, 0.7);
   --white-background: #ffffff;
   --modal-background: #fcfcfc;
+  --global-font: 'Roboto', sans-serif;
+  --second-font: 'Raleway', sans-serif;
 }
+
+/* html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+} */
+
 /* general body styles */
 body {
-  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  font-family: var(--global-font);
   background-color: var(--white-background);
   color: var(--text);
 }
@@ -30,14 +44,14 @@ address {
 
 /* Logo */
 .logo {
-  color: var(--primary-brand);
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--second-font);
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--primary-brand);
 }
 
 .logo-scnd-word {
@@ -102,7 +116,7 @@ address {
 .hero-button,
 .nav-button {
   /* Button Text */
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--global-font);
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
